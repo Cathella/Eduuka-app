@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
 
   # GET /items/1 or /items/1.json
   def show
+    @profits = @item.profit
   end
 
   # GET /items/new

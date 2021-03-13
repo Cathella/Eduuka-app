@@ -4,9 +4,9 @@ RSpec.describe "items/new", type: :view do
   before(:each) do
     assign(:item, Item.new(
       name: "MyString",
-      retail-price: 1,
+      retail_price: 1,
       quantity: 1,
-      wholesale-price: 1
+      wholesale_price: 1
     ))
   end
 
@@ -17,11 +17,11 @@ RSpec.describe "items/new", type: :view do
 
       assert_select "input[name=?]", "item[name]"
 
-      assert_select "input[name=?]", "item[retail-price]"
+      assert_select "input[name=?]", "item[retail_price]"
 
       assert_select "input[name=?]", "item[quantity]"
 
-      assert_select "input[name=?]", "item[wholesale-price]"
+      assert_select "input[name=?]", "item[wholesale_price]"
     end
   end
 end

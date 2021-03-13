@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Wholesale price:</strong>
+  <%= @item.wholesale_price %>
+</p>
+
+<p>
   <strong>Retail price:</strong>
   <%= @item.retail_price %>
 </p>
@@ -16,8 +21,8 @@
 </p>
 
 <p>
-  <strong>Wholesale price:</strong>
-  <%= @item.wholesale_price %>
+  <strong>Item profits:</strong>
+  <%= @profits %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |

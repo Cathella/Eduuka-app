@@ -4,9 +4,9 @@ RSpec.describe "items/show", type: :view do
   before(:each) do
     @item = assign(:item, Item.create!(
       name: "Name",
-      retail-price: 2,
+      retail_price: 2,
       quantity: 3,
-      wholesale-price: 4
+      wholesale_price: 4
     ))
   end
 
